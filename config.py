@@ -9,14 +9,14 @@
 
 # Twitter API credentials. If you need any help have a look at README.md
 twitter_credentials = {
-    "consumer_key": '',
-    "consumer_secret": '',
-    "access_token": '',
-    "access_secret": '',
+    "consumer_key": 'UHqmux3UMxvUvC31xErP2GONy',
+    "consumer_secret": 'DvnSSTnmB4BCV4mziOy5CMQu43csVxmtE9IgtgymvFDn6LBeK1',
+    "access_token": '107104760-xt0BCFI2J2t7jleGUw7FqcxEiYRr3noHtKJHCSRz',
+    "access_secret": 'gTtKrdn1NZBAF5Kf8qvap5zdSqPAMIsIL0IHd1ntLbp6j',
 }
 # DON'T WRITE ANYTHING IN CAPS, AS THE BOT AUTOMATICALLY FLATTERS ALL INPUT TEXTS. THUS ANY WORD WITH CAPS WON'T BE RECOGNIZED
 # Tags that Twitter will use to look up our tweets. Really important as all the script will be based on them
-search_tags = ["giveaway", "contest", "sorteo", "to win"]
+search_tags = ["giveaway", "nftgiveaway", "giveawayalert", "wlgiveaway"]
 # Don't start the bot if friends weren't correctly retrieved
 wait_retrieve = False
 # Enable this if you want the bot to send a DM in case it detects any message_tags
@@ -27,16 +27,16 @@ BadList = ["throat","bone","naked","selfie","photo","onlyfans","nude","+18","fem
 
 # What words will the bot check in order to retweet a tweet. It's important because if the bot doesnt
 # recognize any, it will skip the whole tweet and it wont check if it has to like, msg, or follow
-retweet_tags = ["retweet", "retweetea", "retwitea", "rt"]
+retweet_tags = ["retweet", "rt", "🔄"]
 # What words will trigger to send the author a DM with a random message_text
-message_tags = ["message", "dm"]
+message_tags = ["message"]
 # What words will the bot check in order to follow the author of the tweet plus all the users mentioned in the text
 # (we assume that a retweet tag was recognized)
-follow_tags = ["follow", "fl", "sigue", "seguir", "siguenos"]
+follow_tags = ["follow"]
 # What words will the bot look for in order to like a tweet (it also needs to contain a retweet tag)
-like_tags = ["like", "fav", "favorite"]
+like_tags = ["like", "❤️"]
 # These are supposed to be random msgs the bot would send if DMing is required
-message_text = ["I want to enter to the giveaway!", "Hope to win :D"]
+message_text = ["Hope to win :D"]
 # Add to this list all the users whose contests (actually tweets that contain retweet_tags keywords) the script will
 # always skip (this is for the user's username, not name!) (username is the @ one)
 # Variables related to avoiding users don't need to have a value
